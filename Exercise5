@@ -19,7 +19,7 @@ int main(){
     if(Hours > 8){
         CalculateOT = Hours - 8;
         if(Hours > 0){
-            OTPay = (Rate * 1.30) * CalculateOT;
+            OTPay = (Rate * 0.30) * CalculateOT;
         }else{
             OTPay = 0;
         }
