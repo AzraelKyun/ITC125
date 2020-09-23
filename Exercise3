@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    string StudentName,StudentCourse;
+    double PrelimGrade,PrelimExam,Quiz,Seatwork,LabExercise,Assignment;
+    
+    // Fetch Input
+    cout << "Prelim Grade Calculator" << endl << endl;
+    cout << "Student Name: ";
+    getline(cin, StudentName);
+    cout << "Student Course: ";
+    getline(cin, StudentCourse);
+    cout << "Quiz: ";
+    cin >> Quiz;
+    cout << "Seatwork: ";
+    cin >> Seatwork;
+    cout << "Lab. Exercise: ";
+    cin >> LabExercise;
+    cout << "Assignment: ";
+    cin >> Assignment;
+    cout << "Prelim Exam: ";
+    cin >> PrelimExam;
+
+    // Compute Grade
+    PrelimGrade = Quiz * 0.20 + Seatwork * 0.10 + LabExercise * 0.25 + Assignment * 0.5 + PrelimExam * 0.40;
+
+    cout << endl << "Hello, " << StudentName << " (" << StudentCourse << ")" << endl;
+    cout << "Your Grade is: " << PrelimGrade;
+    exit(0);
+}
