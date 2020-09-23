@@ -1,0 +1,26 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    int Integer;
+    string Result;
+
+    cout << "Number Checker [Positive/Negative/Zero]" << endl << endl;
+    cout << "Integer: ";
+    cin >> Integer;
+
+    if(Integer == 0){
+        Result = "ZERO";
+    }else if(Integer > 0){
+        Result = "POSITIVE NUMBER";
+    }else if(Integer < 0){
+        Result = "NEGATIVE NUMBER";
+    }else{
+        Result = "Invalid Integer!";
+    }
+
+    cout << "Result: " << Result;
+
+    exit(0);
+}
