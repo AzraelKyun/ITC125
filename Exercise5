@@ -25,15 +25,11 @@ int main(){
         }
     }
     
-    // Clear Screen
-    system("cls") // If Linux
-    //system("clear") // If Windows
-    
     // Calculate Wage
     Wage = Rate * Hours + OTPay;
     
     // Output Result
-    cout << "Hello, " << EmployeeName << endl;
+    cout << endl << "Hello, " << EmployeeName << endl;
     cout << "Your Wage is: " << Wage;
 
     exit(0);
