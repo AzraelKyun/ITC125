@@ -24,8 +24,8 @@ int main(){
     cin >> PrelimExam;
 
     // Compute Grade
-    PrelimGrade = Quiz * 0.20 + Seatwork * 0.10 + LabExercise * 0.25 + Assignment * 0.5 + PrelimExam * 0.40;
-
+    PrelimGrade = (Quiz * 0.20) + (Seatwork * 0.10) + (LabExercise * 0.25) + (Assignment * 0.05) + (PrelimExam * 0.40);
+    
     cout << endl << "Hello, " << StudentName << " (" << StudentCourse << ")" << endl;
     cout << "Your Grade is: " << PrelimGrade;
     exit(0);
