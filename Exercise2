@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    double Celsius,Fahrenheit,Kelvin;
+    
+    // Fetch Input
+    cout << "Celsius Converter" << endl << endl;
+    cout << "Input Integer: ";
+    cin >> Celsius;
+
+    // Check if Integer
+    if(Celsius > 0 && Celsius < 1000){
+        // Convert Integer
+        Fahrenheit = (9/5) * Celsius + 32;
+        Kelvin = Celsius + 273;
+
+        // Show Result
+        cout << "Fahrenheit: " << Fahrenheit << endl;
+        cout << "Kelvin: " << Kelvin;
+    }
+
+    exit(0);
+}
