@@ -19,7 +19,7 @@ int main(){
 
     // Clear Screen
     system("cls"); // If Windows
-    //system("clear); // If Linux 
+    //system("clear"); // If Linux 
 
     // Fetch Integer to Solve
     cout << "C++ Calculator" << endl << endl;
