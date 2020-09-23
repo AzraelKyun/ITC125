@@ -1,0 +1,40 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    double Rate,Hours,CalculateOT,OTPay = 0,Wage;
+    string EmployeeName;
+
+    // Fetch Inputs
+    cout << "Wage Calculator" << endl << endl;
+    cout << "Name: ";
+    getline(cin, EmployeeName);
+    cout << "Rate/h: ";
+    cin >> Rate;
+    cout << "Hours Worked: ";
+    cin >> Hours;
+
+    // Calculate Overtime Pay
+    if(Hours > 8){
+        CalculateOT = Hours - 8;
+        if(Hours > 0){
+            OTPay = (Rate * 1.30) * CalculateOT;
+        }else{
+            OTPay = 0;
+        }
+    }
+    
+    // Clear Screen
+    system("cls") // If Linux
+    //system("clear") // If Windows
+    
+    // Calculate Wage
+    Wage = Rate * Hours + OTPay;
+    
+    // Output Result
+    cout << "Hello, " << EmployeeName << endl;
+    cout << "Your Wage is: " << Wage;
+
+    exit(0);
+}
